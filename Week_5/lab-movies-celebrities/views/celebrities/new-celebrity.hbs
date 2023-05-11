@@ -1,7 +1,21 @@
-<form action="/celebrities" method="POST" >
-  <input type="text" name="name" id="" placeholder="celebrity name"> <br>
-  <input type="text" name="occupation" id="" placeholder="celebrity occupation"> <br>
-  <input type="text" name="catchPhrase" id="" placeholder="celebrity catch phrase"> <br>
+<h2>Add a Celebrity</h2>
 
-  <button type="submit">Save the celebrity</button>
+<form action="/celebrities/create" method="post">
+<div>
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+</div>
+
+<div>
+  <label for="occupation">Occupation:</label>
+  <input type="text" name="occupation" id="occupation">
+</div>
+
+<div>
+  <label for="catchPhrase">Catch Phrase:</label>
+  <input type="text" name="catchPhrase" id="catchPhrase">
+</div>
+
+
+  <button type="submit" class="btn">Create Celeb</button>
 </form>
